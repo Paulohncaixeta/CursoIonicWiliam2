@@ -7,8 +7,21 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  
+  <button ion-button icon-left (click)="irParaPagina1('Pagina1Page')">
+    <ion-icon name="body"></ion-icon>
+    Pagina1
+  </button>
+
+  <button ion-button icon-left (click)="irParaPagina2('Pagina2Page')">
+    <ion-icon name="body"></ion-icon>
+    Pagina2
+  </button>
+
+  <button ion-button icon-left (click)="irParaPagina3('Pagina3Page')" >
+    <ion-icon name="body"></ion-icon>
+    Pagina3
+  </button>
+
 </ion-content>
+
