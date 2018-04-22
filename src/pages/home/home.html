@@ -7,6 +7,13 @@
 </ion-header>
 
 <ion-content padding>
+
+  <p>Curso de Ionic com Professor {{text}}</p>
+
+  <ion-item>
+      <ion-label floating>passando variavel</ion-label>
+      <ion-input type="text" [(ngModel)]="text"></ion-input>
+    </ion-item>
   
   <button ion-button icon-left (click)="irParaPagina1('Pagina1Page')">
     <ion-icon name="body"></ion-icon>
