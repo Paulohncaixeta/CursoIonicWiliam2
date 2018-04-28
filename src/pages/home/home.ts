@@ -17,7 +17,7 @@ export class HomePage {
   public modalCtrl: ModalController
   ) {
 
-    this.text = 'Wiliam'
+    this.text = ''
 
   }
 
@@ -37,13 +37,6 @@ export class HomePage {
     pessoa.nome = "Isso é uma pessoa"
     this.navCtrl.push("Pagina2Page", { pessoa: pessoa });
     this.alerta("teste");
-  }
-
-  irParaPagina3() {
-    //console.log("chegou333");
-    let modal = this.modalCtrl.create('Pagina3Page');
-    modal.present();
-    this.alerta("teste3")
   }
 
   alerta(mensagem) {
